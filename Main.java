@@ -10,5 +10,13 @@ public class Main
     System.out.println(w.walkDogs(hour) + " dogs walked.");
     System.out.println(c.numAvailableDogs(hour) + " dogs remaining.");
     hour = c.addDogs();
+         w = new DogWalker(3, c);
+    }
+ public int dogWalkShift(int startHour, int endHour)
+    {
+        int pay = 0;
+        while(startHour <= endHour)
+            int dogs = walkdogs(startHour);
+        pay += dogs * 5;
     }
 }
